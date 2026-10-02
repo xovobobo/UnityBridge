@@ -22,7 +22,7 @@ namespace sensor_msgs
             public const byte UINT32 = 6;
             public const byte FLOAT32 = 7;
             public const byte FLOAT64 = 8;
-#if ROS2_LYRICAL
+#if ROS_V2_LYRICAL
             public const byte INT64 = 9;
             public const byte UINT64 = 10;
             public const byte BOOL = 11;
@@ -83,7 +83,7 @@ namespace sensor_msgs
 
             // Constants for Status
 
-#if ROS2_JAZZY || ROS2_KILTED || ROS2_LYRICAL
+#if ROS_V2_JAZZY || ROS_V2_KILTED || ROS_V2_LYRICAL
             public const sbyte STATUS_UNKNOWN = -2;
 #endif
             public const sbyte STATUS_NO_FIX = -1;
@@ -398,7 +398,7 @@ namespace sensor_msgs
             /// </summary>
             public float range;
 
-#if ROS2_IRON || ROS2_JAZZY || ROS2_KILTED || ROS2_LYRICAL
+#if ROS_V2_IRON || ROS_V2_JAZZY || ROS_V2_KILTED || ROS_V2_LYRICAL
             /// <summary>
             /// variance of the range sensor [m]
             /// 0 is interpreted as variance unknown
